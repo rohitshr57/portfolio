@@ -286,7 +286,7 @@ function BottomDock({ onNavClick }: { onNavClick: (id: SectionId) => void }) {
   ];
 
   return (
-    <div className="fixed bottom-4 left-1/2 z-40 hidden -translate-x-1/2 rounded-2xl border border-white/10 bg-slate-950/90 px-3 py-2 shadow-[0_12px_40px_rgba(15,23,42,0.9)] backdrop-blur sm:flex">
+    <div className="fixed bottom-4 left-1/2 z-40 flex -translate-x-1/2 rounded-2xl border border-white/10 bg-slate-950/90 px-3 py-2 shadow-[0_12px_40px_rgba(15,23,42,0.9)] backdrop-blur md:hidden">
       <div className="flex items-end gap-2">
         {items.map((item) => (
           <motion.button
@@ -304,6 +304,7 @@ function BottomDock({ onNavClick }: { onNavClick: (id: SectionId) => void }) {
     </div>
   );
 }
+
 
 /* ---------- HERO (Apple / Colab notebook) ---------- */
 
@@ -1514,7 +1515,7 @@ function CommandPalette({
     {
       label: "Download CV",
       hint: "Open PDF in new tab",
-      onClick: () => window.open("/Rohit_ML_Upenn.pdf", "_blank"),
+      onClick: () => window.open("/Rohit_Sharma_CV.pdf", "_blank"),
     },
   ];
 
@@ -1926,7 +1927,7 @@ function AgentChat() {
             <div className="flex items-center justify-between border-b border-slate-800/80 px-3 py-2">
               <div>
                 <p className="text-xs font-medium text-slate-100">
-                  RohitAI · behavioral view
+                  RohitAI
                 </p>
                 <p className="text-[10px] text-slate-400">
                   Ask about fit, strengths, weaknesses, and how he works.
