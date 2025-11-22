@@ -156,8 +156,10 @@ export default function Home() {
       {/* Command palette trigger */}
       <button
         onClick={() => setIsCommandOpen(true)}
-        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full border border-cyan-400/60 bg-slate-950/80 px-3 py-2 text-xs text-cyan-100 shadow-lg shadow-cyan-500/40 backdrop-blur hover:bg-slate-900"
-      >
+        className="fixed bottom-6 right-6 z-40 hidden items-center gap-2 rounded-full border border-cyan-400/60 bg-slate-950/80 px-3 py-2 text-xs text-cyan-100 shadow-lg shadow-cyan-500/40 backdrop-blur hover:bg-slate-900 md:flex"
+>
+
+      
         <span className="hidden sm:inline">Command menu</span>
         <span className="rounded-full bg-slate-900 px-2 py-0.5 text-[10px] text-slate-300">
           ⌘K / Ctrl+K
@@ -1906,7 +1908,7 @@ function AgentChat() {
       {/* Floating button */}
       <button
         onClick={() => setIsOpen((v) => !v)}
-        className="fixed bottom-6 left-6 z-50 flex items-center gap-2 rounded-full border border-cyan-400/60 bg-slate-950/90 px-3 py-2 text-xs text-cyan-100 shadow-lg shadow-cyan-500/40 backdrop-blur hover:bg-slate-900"
+        className="fixed bottom-20 left-4 z-50 flex items-center gap-2 rounded-full border border-cyan-400/60 bg-slate-950/90 px-3 py-2 text-xs text-cyan-100 shadow-lg shadow-cyan-500/40 backdrop-blur hover:bg-slate-900 sm:left-6 md:bottom-6"
       >
         <span className="flex h-6 w-6 items-center justify-center rounded-full bg-cyan-400/90 text-slate-950 text-base">
           🤖
